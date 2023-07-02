@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <title>Validation Check</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand-logo"></div>
+      <div class="brand-title">Validation Check</div>
+      <div class="flexContainer">
+        <div class="inputs">
+          <label class="isSuccessLabel">First Name</label>
+          <input class="isSuccess" type="text" placeholder="Input First Name" />
+
+          <label class="isErrorLabel">Last Name</label>
+          <input class="isError" type="text" placeholder="Input Last Name" />
+          <span class="isErrorLabel errorText"
+            >Name Field Should not be Empty</span
+          >
+          <label class="isSuccessLabel">Username</label>
+          <input class="isSuccess" type="text" placeholder="Input Username" />
+          <label class="isErrorLabel">Email</label>
+          <input class="isError" type="email" placeholder="Input Email" />
+          <span class="isErrorLabel errorText">Please Provide Valid Email</span>
+        </div>
+        <div class="inputs">
+          <label class="isErrorLabel">Password</label>
+          <input class="isError" type="password" placeholder="Type Password" />
+          <span class="isErrorLabel errorText">Min 6 Characters Needed</span>
+          <label class="isSuccessLabel">Portfolio URL</label>
+          <input class="isSuccess" type="text" placeholder="Input a URL" />
+          <label class="isErrorLabel">Address</label>
+          <textarea class="isError" placeholder="Your Home Address"></textarea>
+          <span class="isErrorLabel errorText">Please Input Your Address</span>
+        </div>
+      </div>
+      <div class="flexBox">
+        <div class="inputs">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    margin: 0;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    font-family: poppins;
+}
+
+.container {
+    position: relative;
+    width: 767px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.brand-logo {
+    height: 95px;
+    width: 95px;
+    background: url("./icon.png");
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.brand-title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #22c3e6;
+    letter-spacing: 1px;
+}
+
+.inputs {
+    width: 290px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    caret-color: #22c3e6;
+}
+
+input:focus {
+    border: 2px solid #22c3e6;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+textarea {
+    caret-color: #22c3e6;
+    background: #ecf0f3;
+    padding: 20px 20px 10px 20px;
+    height: 108px;
+    font-size: 14px;
+    border-radius: 25px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    border: #fff;
+    resize: none;
+    width: 86%;
+}
+
+textarea::placeholder {
+    color: gray;
+}
+
+textarea:focus {
+    border: 2px solid #22c3e6;
+}
+
+textarea:active {
+    border: 2px solid #22c3e6;
+}
+
+button {
+    color: white;
+    margin-top: 20px;
+    background: #22c3e6;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+a {
+    position: absolute;
+    font-size: 8px;
+    bottom: 4px;
+    right: 4px;
+    text-decoration: none;
+    color: black;
+    background: yellow;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+}
+
+.isSuccess {
+    border: 2px solid green;
+}
+
+.isError {
+    border: 2px solid red;
+}
+
+.isSuccessLabel {
+    color: green;
+}
+
+.isErrorLabel {
+    color: red;
+}
+
+.errorText {
+    font-size: 13px;
+}
